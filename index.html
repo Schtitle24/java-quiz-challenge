@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+
+
+  <title>Java Script Challenge</title>
+</head>
+<body>
+   <header class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-6">
+                <button id="view-scores" type="button" class="btn btn-info d-inline-block mt-1">View High Scores</button>
+            </div>
+            <div class="col-6">
+                <p class="d-flex font-weight-bold justify-content-end timer">Time:30s</p>
+            </div>
+        </div>
+    </header>
+    <!--this is my starting load page--> 
+    <section id="start">
+      <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+              <h1 class="d-flex justify-content-center text-center">Prepare to take on the JavaScript Challenge!</h1>
+              <p class="d-flex justify-content-center text-center">Try your best to answer the following questions correctly and as quickly as possible. Answering a question wrong will dock five seconds from your clock so choose carefully!</p>
+              <button id="begin" type="button" class="btn btn-success mx-auto d-block">Begin</button></p>
+          </div>
+      </div>
+    </section>
+    <!--this is my questions page--> 
+    <section id="questions">
+      <div class="column">
+        <h2 id="questionTxt">Here is my question</h2>
+        <ul class="px-0 py-0 nobullets">
+          <li class="mb-3"><button id="choice1" value="0" type="button"
+                  class="btn btn-success answerBtn">Answer1</button></li>
+          <li class="mb-3"><button id="choice2" value="1" type="button"
+                  class="btn btn-success answerBtn">Answer2</button></li>
+          <li class="mb-3"><button id="choice3" value="2" type="button"
+                  class="btn btn-success answerBtn">Answer3</button></li>
+          <li class="mb-3"><button id="choice4" value="3" type="button"
+                  class="btn btn-success answerBtn">Answer4</button></li>
+      </ul>
+      <div id="confirmation" class="font-bold font-weight-light ">
+        <hr>
+    </div>
+      </div>
+    </section>
+     <!--this is my score entry page--> 
+    <section>
+        <div id="complete">
+          <h2>Congratulations! You are done!</h2>
+          <p>Your final score is :: <span id="score"></span></p>
+          <p>Enter Your Initials :: <span><input id="player"></span> </p> 
+            <button id="submit-score">Submit</button>
+        </div>
+    </section>
+    <!--this is my high score page--> 
+    <section id="high-scores">
+      <div class="column">
+        <h2>High Scores</h2>
+          <ol id="leaderboard">
+            <li>score 1</li>
+            <li>score 2</li>
+            <li>score 3</li>
+            <li>score 4</li>
+          </ol>
+        <div class="row">
+          <button id="goBack">Go Back</button>
+        </div>
+      </div>
+    </section>
+    
+<!-- >
+create the underlying structure (skeleton)
+make sure everything FUNCTIONS CORRECTLY (muscle)
+make sure everyting LOOKS CORRECT (skin)
+
+
+  start with a landing page for the quiz
+  Happy Path
+  click on begin button and 
+  - the timer will start ** 
+  - the first question will be shown***
+  - the intro container will be hidden***
+  question 1 page 
+  - will display the first question above with the answers in clickable buttons ***
+  - when the correct answer is clicked it will move to the next question
+      -it will display "Correct!"***
+  - when the wrong answer is clicked it will not progress to the next question.
+      -the timer will be docked 5 seconds***
+      -it will display "Incorrect"***
+
+  Question 1 page
+  will have a header element containing the question
+  will have a list with four items that are clickable buttons as possible answers
+   functions
+   - if no button is clicked and time runs out the quiz will move to the final container (end) 
+   - if the wrong answer is clicked then it will display "wrong" and decrese the timer by five seconds
+   - if the correct answer is clicked then it will display "Correct!": and move to the next questions repeating these steps. 
+
+  Repeat ^^^ until no questions remain or time runs out. 
+
+  need answeredCount to be equal to questionprompt.length to run then run function similar to start of quiz
+
+  When final conditions are met (timer runs out or all questions are answered correctly)
+    -you will be prompted to enter initials
+    - container will change to "complete status" which contains a header, a text input, a submit button, 
+    - final score will be displayed 
+  
+  When submitting your score it will move you to the leaderboard
+
+  To Dos:
+  -Timer needs to stop running when it hits 0***
+  -Timer needs to not start new intervals on a double click (button should disapear after clicked once)****
+  -Timer ticks down one more when you move from final question to the next page. 
+  -hide view score button on leaderboard
+  -erase previous answer comments. 
+
+
+
+
+
+
+
+
+
+
+
+-->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
