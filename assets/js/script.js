@@ -216,6 +216,7 @@ function restart (){
 function highscore (){
   homePage.style.display = 'none';
   questionPage.style.display = 'none';
+  scorePage.style.display = 'none';
   lboardPage.style.display = 'block';
 }
 // event listener for begin button
