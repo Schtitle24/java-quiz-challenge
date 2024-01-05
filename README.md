@@ -5,6 +5,11 @@
 
 
 
+
+Deployed Application :: https://schtitle24.github.io/java-quiz-challenge/
+
+Repository :: https://github.com/Schtitle24/java-quiz-challenge
+
 Start Page
 ![java quiz start](https://github.com/Schtitle24/java-quiz-challenge/assets/153530625/f2053e8d-0091-412a-b149-80a6366fe608)
 
