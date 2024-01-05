@@ -1,10 +1,16 @@
-# java-quiz-challenge
+Howdy!
 
+Welcome to my fun little javaScript quiz! 
 
+Feel free to take it for a spin and test some of your basic javaScript knowledge! 
 
+This application will serve as a quick and fun test of your basic javaScript knowledge. You will be able to progress through a series of funcitons that reveal questions with clickable answers. As you click through you will experience two things. 
+When you get an answer correct you will progress to the next question
+When you get an answer incorrect it will progress to the next question and subtract five seconds from your time
 
+once you get to the end of the quiz, the time you have left will be your final score! So be quick!  But make sure to select the right answer cause you can score a negative score! 
 
-
+I do hope you enjoy my quiz, and make sure to keep coming back as it grows! I have plans to make it much prettier and maybe even include some fun hidden elements. 
 
 Deployed Application :: https://schtitle24.github.io/java-quiz-challenge/
 
